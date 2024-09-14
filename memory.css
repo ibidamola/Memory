@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 750px;  
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 { 
+    font-size: 150%;
+    color: blue;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 8em;
+}
+input, select { 
+    width: 10em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+input[type=checkbox] { 
+    width: 2em;
+}
+header p {
+	margin: 0 2em 1em 0;
+}
+#new_game, #player, #high_score, #correct {
+	float: left;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1em;
+  }
+#cards img {
+    height: 100px;
+    width: 80px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+/**********/
+.card .back {
+    display: block;
+}
+
+.card .front {
+    display: none;
+}
+
+.card.flipped .back {
+    display: none;
+}
+
+.card.flipped .front {
+    display: block;
+}
